@@ -1,6 +1,6 @@
-package com.core.sigel.sibase;
+package com.core.sigel.app;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
 import com.core.sigel.sibase.model.FlowChart;
@@ -12,13 +12,13 @@ import java.util.List;
 /**
  * @author sigel
  */
-public class BaseMainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private FLowLineView mFLowLineView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base_main);
+        setContentView(R.layout.activity_main);
         mFLowLineView = findViewById(R.id.flow_view);
         List<FlowChart> charts = new ArrayList<>();
         FlowChart chart = new FlowChart();
